@@ -1,0 +1,99 @@
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: #d2daf1;
+}
+
+
+.chat-screen{
+    height: calc(100% - 160px);
+    overflow: auto; /* 내용이 넘치면 스크롤 추가*/
+}
+
+.chat-screen .chat_screen__bar{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 100px;
+}
+
+
+.chat-user{
+    background-color: #f2f2f2;
+}
+
+
+.chat-form{
+    height: 160px;
+    background-color: #ffffff;
+}
+
+.chat-form__plugin{
+    height: 40px;
+    background-color: #f2f2f2;
+
+}
+
+.chat-form__plugin .chat-form__icon {
+    margin:  0 0 0 15px; /*위 오른쪽 아래 왼쪽 */
+    line-height: 40px; /*텍스트 줄높이*/
+}
+
+.chat-form .chat-form__field {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    font-size: 1em;
+}
+
+.chat-form .chat-form__msg:focus{
+    outline: none;
+}
+
+
+.chat-form .chat-form__msg{
+    width: calc(100% - 120px);
+    height: 100px;
+    padding: 10px;
+    border: none;
+    resize: none;
+    text-decoration: none;
+}
+
+.chat-form .chat-form__bt {
+    width: 120px;
+    height: 100px;
+    background-color: #9ec4cf;
+    border-radius: 8px;
+}
+
+.chat-form .chat-form__bt:active{
+    background-color: #a1bec7;
+}
+
+/* 말풍선 스타일 */
+.comment {
+    position: relative;
+    left: 5px;
+    width: 280px;
+    height: 50px;
+    list-style-type: none;
+    background-color: #9ec4cf;
+    padding: 10px;
+    margin: 0 0 10px 0;
+    border-radius: 10px;
+    line-height: 30px;
+}
+
+.comment::after{ /*before*/
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    border-right: 16px solid #9ec4cf;
+    border-bottom: 16px solid transparent;
+}
+
+/*돌아가기*/
+

@@ -1,0 +1,28 @@
+.header{
+    display: flex;
+    justify-content: space-between; /*양 옆으로 퍼진다*/
+    position: sticky; /*헤더가 그대로 있을수 있도록*/
+    top: 0;
+    z-index: 1;
+    padding: 12px;
+    background-color: #ffffff;
+    line-height: 36px; /*텍스트 줄높이*/
+}
+
+
+.header__title{
+    margin:0;
+    font-size: 1em;
+}
+
+.header__menu span{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.header__menu span:hover{
+    background-color: #eaeaea;
+}

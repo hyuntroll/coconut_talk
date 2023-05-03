@@ -1,0 +1,35 @@
+.nav {
+    position: fixed; /*정해진 위치에 고정*/
+    top: 0;
+    left:0;
+    width: 70px;
+    height: 100%;
+    background-color: #f1f1f1;
+    z-index: 2; /*요소가 겹치는 경우 z-index가 더 높은게 더 앞에 보임*/
+}
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav__list .nav__btn:first-child {
+    margin-top: 50px;
+}
+
+.nav__list .nav__btn a {
+    display: block;
+    padding: 16px 0;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav__list .nav__btn a:not(.active) {
+    color: #bdbdbd
+}
+
+.nav__list .nav__btn a:not(.active):hover {
+    color: #555555;
+}
